@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/server.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/growtopia/server_data.php", "dest": "/api/server" },
+    { "src": "/player/login/validate", "dest": "/api/server" }
+  ]
+}
